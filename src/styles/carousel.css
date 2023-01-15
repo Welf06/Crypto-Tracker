@@ -1,5 +1,6 @@
 .carousel-container{
    margin-top: 5.5rem;
+   transform: scale(1.1);
 }
 
 .carousel{
@@ -7,6 +8,10 @@
    justify-content: space-between;
    align-items: center;
    gap: 1rem;
+}
+
+.carousel img{
+   cursor: pointer;
 }
 
 /* Card CSS */
