@@ -1,0 +1,33 @@
+.carousel-container{
+   margin-top: 5.5rem;
+}
+
+.carousel{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 1rem;
+}
+
+/* Card CSS */
+
+.card-container{
+   display: flex;
+   gap: 1rem;
+   overflow-x: auto;
+   padding: 1rem 0;
+   width: 33%;
+}
+
+.card{
+   width: 100%;
+   background-color: #fff;
+   gap: 5%;
+   border-radius: 12px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   display: flex;
+   justify-content: left;
+   align-items: center;
+   padding: 1rem;
+   transition: all 0.3s ease-in-out;
+}
