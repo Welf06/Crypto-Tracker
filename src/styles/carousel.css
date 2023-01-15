@@ -1,6 +1,11 @@
 .carousel-container{
    margin-top: 5.5rem;
    transform: scale(1.1);
+}@media screen and (max-width: 768px){
+   .carousel-container{
+         margin-top: 5.5rem;
+         transform: scale(1);
+   }
 }
 
 .carousel{

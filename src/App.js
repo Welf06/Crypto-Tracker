@@ -6,7 +6,7 @@ import TableMobile from './components/TableMobile';
 import './styles/App.css';
 
 function App() {
-  if (window.innerWidth < 768) 
+  if (window.innerWidth <= 768) 
     return(
       <div className="App">
         <Navbar />

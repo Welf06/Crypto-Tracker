@@ -37,6 +37,7 @@ body {
          padding: 0 5vw;
    }
 }
+
 @media screen and (max-width: 768px){
    body{
          padding: 0 2.5vw;

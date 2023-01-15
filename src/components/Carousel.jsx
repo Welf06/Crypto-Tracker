@@ -31,7 +31,7 @@ function Carousel() {
 		},
 	];
 
-	if (window.innerWidth < 768) {
+	if (window.innerWidth <= 768) {
 		return <Mobile sampleData={sampleData} />;
 	} else {
 		return <Laptop sampleData={sampleData} />;
