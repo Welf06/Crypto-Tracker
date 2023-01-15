@@ -37,7 +37,7 @@
    display: flex;
    justify-content: left;
    align-items: center;
-   padding: 1rem;
+   padding: 0.9rem;
    transition: all 0.3s ease-in-out;
 }
 
@@ -62,11 +62,11 @@
    justify-content: space-between;
    gap: 0.5rem;
    padding: 0 0;
-   font-size: 1rem;
+   font-size: 0.9rem;
 }
 
 .card-content p{
-   font-size: 0.85rem;
+   font-size: 0.75rem;
    color: #656C7E;
 }
 
