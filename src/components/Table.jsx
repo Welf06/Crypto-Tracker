@@ -2,12 +2,14 @@ import React, { useState, useEffect, useMemo } from "react";
 
 import axios from "axios";
 
+import Pagination from "./Pagination";
 import "../styles/table.css";
 import star from "../assets/star.svg";
 import option from "../assets/option.svg";
 import upArrow from "../assets/up-arrow.svg";
 import downArrow from "../assets/down-arrow.svg";
 import equal from "../assets/equal.svg";
+
 
 function Table() {
 	const [data, setData] = useState([]);
@@ -250,23 +252,28 @@ function Table() {
 													</div>
 													<div className="progress-container">
 														<hr
-                                             style={{
-                                                border: "0.2rem solid #EFF2F5",
-                                                borderRadius: "5px",
-                                                backgroundColor: "#EFF2F5",
-                                                width: "100%",
-                                                marginTop: "0.5rem",
-                                             }}
-                                          />
-                                          <hr
-                                             style={{
-                                                border: "0.2rem solid #CFD6E4",
-                                                borderRadius: "5px",
-                                                backgroundColor: "#CFD6E4",
-                                                width: `${item.circulating_supply / item.total_supply * 100}%`,
-                                                transform: "translateY(-100%)",
-                                             }}
-                                          />
+															style={{
+																border: "0.2rem solid #EFF2F5",
+																borderRadius: "5px",
+																backgroundColor: "#EFF2F5",
+																width: "100%",
+																marginTop: "0.5rem",
+															}}
+														/>
+														<hr
+															style={{
+																border: "0.2rem solid #CFD6E4",
+																borderRadius: "5px",
+																backgroundColor: "#CFD6E4",
+																width: `${Math.min(
+																	(item.circulating_supply /
+																		item.total_supply) *
+																		100,
+																	100
+																)}%`,
+																transform: "translateY(-100%)",
+															}}
+														/>
 													</div>
 												</td>
 												<td>
@@ -282,27 +289,16 @@ function Table() {
 								</tbody>
 							</table>
 						</div>
-						<div className="table-footer">
-							{/* pagination in bottom right */}
-							<div className="pagination">
-								{numPages.map((number) => (
-									<div
-										key={number}
-										className="page-number"
-										onClick={() => handlePageClick(number)}
-										style={{
-											borderColor:
-												number === currentPage ? "#0052FE" : "#DFE3E8",
-											color: number === currentPage ? "#0052FE" : "#000000",
-										}}
-									>
-										{number}
-									</div>
-								))}
-							</div>
-						</div>
 					</>
 				)}
+				<div className="table-footer">
+					{/* pagination in bottom right */}
+					<Pagination
+						numPages={numPages}
+						currentPage={currentPage}
+						handlePageClick={handlePageClick}
+					/>
+				</div>
 			</div>
 		</>
 	);

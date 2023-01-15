@@ -1,5 +1,9 @@
 # KoinX Frontend Developer Intern Interview Task
 
-Converting the Crypto Tracker page from Figma to React.
+Transalting the Given Crypto Tracker Figma Design into a React App.
 
-For the assignment just React and vanilla CSS was used. No other libraries were used.
+## Tech Stack
+
+- ReactJS (No other libraries apart from Hooks and Axios) 
+- CSS (Vanilla CSS)
+
