@@ -7,7 +7,22 @@ import search from "../assets/search.svg";
 import hamburger from "../assets/hamburger.svg";
 
 function Navbar() {
-	return (
+   if (window.innerWidth < 768) {
+      return (
+		<>
+			<div className="navbar-container">
+         <div className="search-container">
+					<img src={hamburger} alt="hamburger" />
+				</div>
+				<div className="logo-container">
+					<img src={logo} alt="logo" />
+				</div>
+			</div>
+		</>
+	);
+   }
+   else{
+      return (
 		<>
 			<div className="navbar-container">
 				<div className="logo-container">
@@ -21,6 +36,8 @@ function Navbar() {
 			</div>
 		</>
 	);
+   }
+
 }
 
 export default Navbar;

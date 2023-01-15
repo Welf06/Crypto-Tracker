@@ -9,11 +9,13 @@ function Card({title, image, content}) {
       <div className="card-container">
          <div className="card">
             <div className="card-image">
-               <img src={image} alt="card" />
+               <img src={image} alt="card" 
+                  style={{height: "100%", width: "100%", objectFit: "cover"}}
+               />
             </div>
             <div className="card-content">
-               <h3>{title}</h3>
-               <p>{content}</p>
+            <p>{title}</p>
+               <h4>{content}</h4>
             </div>
          </div>
       </div>
