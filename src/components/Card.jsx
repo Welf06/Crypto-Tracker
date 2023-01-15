@@ -1,7 +1,6 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 
 import '../styles/carousel.css'
-import card1 from '../assets/card1.png'
 
 function Card({title, image, content}) {
   return (
