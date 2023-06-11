@@ -1,6 +1,6 @@
-# KoinX Frontend Developer Intern Interview Task
+# Crypto Tracker
 
-Transalting the Given Crypto Tracker Figma Design into a React App.
+A simple Crypto Tracker.
 
 ## Tech Stack
 
